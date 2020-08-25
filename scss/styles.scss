@@ -1,0 +1,48 @@
+$primary-purple: #5D3267;
+
+@import 'nav';
+@import 'showcase';
+@import 'about';
+@import 'packages';
+@import 'contact';
+@import 'signup';
+@import 'footer';
+@import 'pop-up';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+.container {
+    margin: 0 10%;
+}
+.logo {
+    color: #000;
+}
+.btn {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $primary-purple;
+    border-radius: 16px;
+    border: none;
+    padding: 10px 20px;
+    font-size: .9em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    white-space: nowrap;
+}
+.btn:hover {
+    opacity: 90%;
+    transform: scale(1.1);
+}
+
+a { cursor: pointer; }

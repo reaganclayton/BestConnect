@@ -1,0 +1,51 @@
+/* About */
+.about-cards {
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+    div {
+        padding: 30px 0;
+        margin: 0 auto;
+        max-width: 350px;
+    }
+
+    i {
+        font-size: 64px;
+        color: $primary-purple;
+        transition: all .2s ease-in-out;
+    }
+
+    i:hover {
+        opacity: 90%;
+        transform: scale(1.2);
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin: 20px 0;
+        white-space: nowrap;
+    }
+
+    p {
+        line-height: 2;
+        letter-spacing: .5px;
+        opacity: 50%;
+    }
+}
+
+.about-cards::before {
+    position: absolute;
+    transform: skewY(11deg);
+}
+
+
+@media(min-width: 996px) {
+    .about-cards {
+        display: flex;
+        justify-content: center;
+        padding: 60px 0;
+
+        div { margin: 0 30px; }
+    }
+}

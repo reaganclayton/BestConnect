@@ -1,0 +1,44 @@
+/* Sign-Up */
+.sign-up {
+    background-image: url('imgs/signup-480.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        padding: 30px 0 15px;
+        white-space: nowrap;
+    }
+}
+
+@media(min-width: 480px) {
+    .sign-up {
+        background-image: url('imgs/signup-768.jpg');
+
+        h1 { font-size: 1.75em; }
+    }
+}
+@media(min-width: 768px) {
+    .sign-up {
+        background-image: url('imgs/signup-996.jpg');
+        height: 400px;
+
+        h1 {
+            font-size: 2em;
+            padding: 35px 0 20px;
+        }
+    }
+}
+@media(min-width: 996px) {
+    .sign-up {
+        background-image: url('imgs/signup-1200.jpg');
+    }
+}
+@media(min-width: 1200px) {
+    .sign-up {
+        background-position: center center;
+    }
+}
