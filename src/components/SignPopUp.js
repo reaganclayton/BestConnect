@@ -15,7 +15,7 @@ function SignPopUp() {
                 </div>
                     <input type="password" name="password" id="password" />
                 <button class="btn">Sign Up</button>
-                <h5 class="switch switch-log-in">Already have an account? <a>Log In</a></h5>
+                <h5 class="switch switch-log-in">Already have an account? <a href="/#">Log In</a></h5>
             </div>
         </div>
     )
