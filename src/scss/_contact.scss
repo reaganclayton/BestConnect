@@ -97,7 +97,7 @@
             i { padding-right: 10px; }
 
             p {
-                opacity: 50%;
+                opacity: .5;
                 line-height: 2em;
                 display: inline;
             }
@@ -114,7 +114,7 @@
             }
 
             i:hover {
-                opacity: 90%;
+                opacity: .9;
                 transform: scale(1.1);
                 transform-origin: center;
             }
