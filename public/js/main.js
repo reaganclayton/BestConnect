@@ -1,6 +1,9 @@
+//Loading CSS
+document.querySelector("#fontAwe").removeAttribute('disabled');
+document.querySelector("#googleFonts").removeAttribute('disabled');
+
 //Variables
 const burgerMenu = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
 
 const navAbout = document.querySelector('#nav-about');
 const navPackages = document.querySelector('#nav-packages');
@@ -14,13 +17,16 @@ const closeIconLogIn = document.querySelector('.close-icon-log-in');
 const switchSignUp = document.querySelector('.switch-sign-up');
 const switchLogIn = document.querySelector('.switch-log-in');
 
-
-
-
-//Event Listeners
+//Fade out loader
+window.onload = () => {
+    const loaderWrapper = document.querySelector('.loader-wrapper');
+    loaderWrapper.style.opacity = "0";
+    loaderWrapper.style.display = "none"
+};
 
 //Burger Menu Toggle
 burgerMenu.addEventListener('click', () => {
+    const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('toggle');
     burgerMenu.classList.toggle('toggle');
 });
@@ -53,6 +59,7 @@ window.addEventListener('scroll', () => {
 signUp.addEventListener('click', () => {
     window.scrollTo(0,0);
     document.querySelector('.sign-up').style.display = "flex";
+    
 });
 
 closeIconSignUp.addEventListener('click', () => {

@@ -34,12 +34,6 @@
     }
 }
 
-.about-cards::before {
-    position: absolute;
-    transform: skewY(11deg);
-}
-
-
 @media(min-width: 996px) {
     .about-cards {
         display: flex;
